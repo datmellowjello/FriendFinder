@@ -46,12 +46,21 @@ module.exports = function(app) {
 
      let bestFriend = { dif: 100 };
 
-    for (i = 0; i < usersArray.length; i++) {
-            let dood = usersArray[i];
+    for (i = 0; i < friends.length; i++) {
+            let dood = friends[i];
             let doodTotal = 0;
             let friendTotal = 0;
             let dif = 101;
+            for (idx in dood.stats){
 
+                doodTotal += parseInt(dood.stats[idx]);
+                friendTotal += parseInt(newFriend.stats[idx]);
+            };
+            if (doodTotal === friendTotal && dood !== newFriend){
+                bestFriend.dif = 0;
+                bestFriend.obj = dood}
+            else if (dudeTotal>friendTotal){dif = doodTotal-friendTotal}
+            }
 
 
     }
