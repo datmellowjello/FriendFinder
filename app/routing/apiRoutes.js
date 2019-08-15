@@ -63,14 +63,17 @@ module.exports = function(app) {
             else {dif = friendTotal - doodTotal};
             if (dic<bestFriend.dif) {
                 bestFriend.dif = dif;
-                bestFriend.obj = dood}
-            }
-           
+                bestFriend.obj = dood};
+            };
+            bestFriend = bestFriend.obj;
+            res.json(bestFriend);
+            friends.push(newFriend);
         
-        }
+        })
+    };
 
 
-    }
+    
 
     //   tableData.push(req.body);
     //   res.json(true);
@@ -78,18 +81,18 @@ module.exports = function(app) {
     // else {
     //   waitListData.push(req.body);
     //   res.json(false);
-    }
-  });
+//     }
+//   });
 
   // ---------------------------------------------------------------------------
   // I added this below code so you could clear out the table while working with the functionality.
   // Don"t worry about it!
 
-  app.post("/api/clear", function(req, res) {
-    // Empty out the arrays of data
-    tableData.length = 0;
-    waitListData.length = 0;
+//   app.post("/api/clear", function(req, res) {
+//     // Empty out the arrays of data
+//     tableData.length = 0;
+//     waitListData.length = 0;
 
-    res.json({ ok: true });
-  });
-};
+//     res.json({ ok: true });
+//   });
+// };
