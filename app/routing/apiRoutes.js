@@ -60,7 +60,14 @@ module.exports = function(app) {
                 bestFriend.dif = 0;
                 bestFriend.obj = dood}
             else if (dudeTotal>friendTotal){dif = doodTotal-friendTotal}
+            else {dif = friendTotal - doodTotal};
+            if (dic<bestFriend.dif) {
+                bestFriend.dif = dif;
+                bestFriend.obj = dood}
             }
+           
+        
+        }
 
 
     }
