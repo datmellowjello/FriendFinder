@@ -23,8 +23,10 @@ app.use(express.json());
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 // ================================================================================
 
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+var apiRoutes = require("./app/routing/apiRoutes")
+var htmlRoutes = require("./app/routing/htmlRoutes")
+htmlRoutes(app, path)
+apiRoutes(app, path)
 
 // =============================================================================
 // LISTENER

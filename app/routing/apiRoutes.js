@@ -59,9 +59,9 @@ module.exports = function(app) {
             if (doodTotal === friendTotal && dood !== newFriend){
                 bestFriend.dif = 0;
                 bestFriend.obj = dood}
-            else if (dudeTotal>friendTotal){dif = doodTotal-friendTotal}
+            else if (doodTotal>friendTotal){dif = doodTotal-friendTotal}
             else {dif = friendTotal - doodTotal};
-            if (dic<bestFriend.dif) {
+            if (dif<bestFriend.dif) {
                 bestFriend.dif = dif;
                 bestFriend.obj = dood};
             };
