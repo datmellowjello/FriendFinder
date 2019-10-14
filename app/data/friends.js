@@ -28,14 +28,14 @@
 //   module.exports = friends;
   var friends = [
     {
-        name: "Martha",
-        age: "99",
-        picture:"https://i.pinimg.com/originals/44/48/bd/4448bdf5c7dc59cff604d9c7383a25b9.gif",
+        name: "Peter",
+        age: "7",
+        picture:"https://i.imgur.com/oyE7hBY.jpg",
         stats: [5,3,6,5,4,2,5,3,2,1,5,2,2,4]
     },{
-        name: "Tony",
+        name: "Mountain",
         age: "51",
-        picture:"https://cdn.tiebreaker.com/wp-content/uploads/2019/06/GettyImages-591796650-e1559936515767.jpg",
+        picture:"https://upload.wikimedia.org/wikipedia/en/d/d8/Gregor_Clegane-The_Mountain-Haf%C3%BE%C3%B3r_J%C3%BAl%C3%ADus_Bj%C3%B6rnsson.jpg",
         stats: [5,3,4,2,5,5,1,2,3,4,5,2,3,5]
     },{
         name: "Snoop",
